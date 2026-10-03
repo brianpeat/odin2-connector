@@ -75,6 +75,8 @@ target_compile_definitions(Odin2
 
 # ==================== Check OS =======================
 target_include_directories(Odin2 
+  PUBLIC
+    ${CMAKE_SOURCE_DIR}/connector
   PRIVATE 
     ${CMAKE_BINARY_DIR}/include 
     libs/tuning-library
@@ -108,6 +110,7 @@ target_sources(Odin2
     "Source/ConfigFileManager.cpp"
     "Source/PluginEditor.cpp"
     "Source/PluginProcessor.cpp"
+    "Source/PresetConnectorOdin.cpp"
     "Source/Utilities.cpp"
     "Source/audio/ADSR.cpp"
     "Source/audio/Amplifier.cpp"

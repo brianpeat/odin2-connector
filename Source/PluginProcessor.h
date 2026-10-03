@@ -17,6 +17,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "GlobalIncludes.h"
+#include <PresetConnector.h>
 #include "OdinTreeListener.h"
 #include "audio/FX/Chorus.h"
 #include "audio/FX/Delay.h"
@@ -43,8 +44,13 @@
 
 class OdinEditor;
 
-class OdinAudioProcessor : public AudioProcessor {
+class OdinAudioProcessor : public AudioProcessor, public presetconnector::Handler {
 public:
+
+	// Preset Connector (see connector/ and Source/PresetConnectorOdin.cpp)
+	std::string handleRequest(const std::string &requestJson) override;
+	bool connectorLoadFactory(int index);
+	std::string m_connector_current_id;
 
 	OdinAudioProcessor();
 	~OdinAudioProcessor();
