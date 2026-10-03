@@ -1,0 +1,4011 @@
+{
+ "connector": 1,
+ "plugin": {
+  "name": "Odin 2",
+  "id": "com.TheWaveWarden.Odin2",
+  "version": "2.4.1"
+ },
+ "revision": "odin2-2.4.1-factory",
+ "presets": [
+  {
+   "id": "factory/Arps & Sequences/Arp Charger [RM]",
+   "name": "Arp Charger [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Arp Chopper [RM]",
+   "name": "Arp Chopper [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Bass Arp 1 [RS]",
+   "name": "Bass Arp 1 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Bassline",
+   "name": "Bassline",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Cinedrive (MW) [Photonic]",
+   "name": "Cinedrive (MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Critical [tx]",
+   "name": "Critical [tx]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Darkness [psylion]",
+   "name": "Darkness [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Doctor Karlsson",
+   "name": "Doctor Karlsson",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Dreamy ARP [psylion]",
+   "name": "Dreamy ARP [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Forgive me GOD",
+   "name": "Forgive me GOD",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Funk Acid 2 [psylion]",
+   "name": "Funk Acid 2 [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Funk Acid [psylion]",
+   "name": "Funk Acid [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Funny 2",
+   "name": "Funny 2",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Glass Morph ARP [RS]",
+   "name": "Glass Morph ARP [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Harpstrum Down [RS]",
+   "name": "Harpstrum Down [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Harpstrum Up [RS]",
+   "name": "Harpstrum Up [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/I was born in 90s [psylion]",
+   "name": "I was born in 90s [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Midi Rain",
+   "name": "Midi Rain",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Minor Song",
+   "name": "Minor Song",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Modular Mess 2",
+   "name": "Modular Mess 2",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Omani Desert 1 [psylion]",
+   "name": "Omani Desert 1 [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Omani Desert 2 [psylion]",
+   "name": "Omani Desert 2 [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/RandArpChords (MW) [Photonic]",
+   "name": "RandArpChords (MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Self Phasing Arp",
+   "name": "Self Phasing Arp",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Sharp Lead",
+   "name": "Sharp Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/Sound of Paradise [psylion]",
+   "name": "Sound of Paradise [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Arps & Sequences/The Arp 2.0 [XR]",
+   "name": "The Arp 2.0 [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Arps & Sequences"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Alien Atmo [tx]",
+   "name": "Alien Atmo [tx]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Alien Chaos [psylion]",
+   "name": "Alien Chaos [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Alien Chaos2 [psylion]",
+   "name": "Alien Chaos2 [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Analog Particles [XR]",
+   "name": "Analog Particles [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Antarctica [RS]",
+   "name": "Antarctica [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Atmo-Chaos [Photonic]",
+   "name": "Atmo-Chaos [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Blinking Pad [Photonic]",
+   "name": "Blinking Pad [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Digital Motion [XR]",
+   "name": "Digital Motion [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Dreams of Utopia [psylion]",
+   "name": "Dreams of Utopia [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Eerie Pad",
+   "name": "Eerie Pad",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Expressive Atmosphere [XR]",
+   "name": "Expressive Atmosphere [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Floating Dreams [XR]",
+   "name": "Floating Dreams [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Frosty Atmo [tx]",
+   "name": "Frosty Atmo [tx]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Galata Dream",
+   "name": "Galata Dream",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Messy Seq X-Y",
+   "name": "Messy Seq X-Y",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Orbitalesque Stabs [4T]",
+   "name": "Orbitalesque Stabs [4T]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Pacific Nights",
+   "name": "Pacific Nights",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Pulsator",
+   "name": "Pulsator",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Sound of Paradise2 [psylion]",
+   "name": "Sound of Paradise2 [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Sunrise",
+   "name": "Sunrise",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Vector Soundtrack [XR]",
+   "name": "Vector Soundtrack [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Violet",
+   "name": "Violet",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Voyage 1a X-Y",
+   "name": "Voyage 1a X-Y",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Atmospheres/Zambezi River [psylion]",
+   "name": "Zambezi River [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Atmospheres"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Analog Bass [tx]",
+   "name": "Analog Bass [tx]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/BS Decay Bass MW",
+   "name": "BS Decay Bass MW",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/BS PWM Bass XY",
+   "name": "BS PWM Bass XY",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Bass Crusher [RM]",
+   "name": "Bass Crusher [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Bass Low [RM]",
+   "name": "Bass Low [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Bass Seq 2 [RS]",
+   "name": "Bass Seq 2 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Bass Simple PM [RS]",
+   "name": "Bass Simple PM [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Bass Wobble [4T]",
+   "name": "Bass Wobble [4T]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Bass X-Y Mod [RS]",
+   "name": "Bass X-Y Mod [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Boards Bass",
+   "name": "Boards Bass",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/DeepBass [Photonic]",
+   "name": "DeepBass [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Growly FM Bass [XR]",
+   "name": "Growly FM Bass [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/PM Bass [XR]",
+   "name": "PM Bass [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Rhythm Bass",
+   "name": "Rhythm Bass",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Bass/Sausage Bassener",
+   "name": "Sausage Bassener",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Bass"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Arp-Bells [Photonic]",
+   "name": "Arp-Bells [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Cheese Pad",
+   "name": "Cheese Pad",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Chimes [Photonic]",
+   "name": "Chimes [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Ethereal Bells",
+   "name": "Ethereal Bells",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/FM Church Bells [RS]",
+   "name": "FM Church Bells [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Glass Harp A slow",
+   "name": "Glass Harp A slow",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Glass Morph XY [RS]",
+   "name": "Glass Morph XY [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/New Age Lead",
+   "name": "New Age Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/PRC GlassHit",
+   "name": "PRC GlassHit",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Pad Sine",
+   "name": "Pad Sine",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Synth Glass ",
+   "name": "Synth Glass ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Synth Glassybell",
+   "name": "Synth Glassybell",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chimes/Vibraphone",
+   "name": "Vibraphone",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chimes"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Bagpipe Tune",
+   "name": "Bagpipe Tune",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Chippy",
+   "name": "Chippy",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/ChippyDelayed",
+   "name": "ChippyDelayed",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Chiptune Chords [Projektor]",
+   "name": "Chiptune Chords [Projektor]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Lead 64",
+   "name": "Lead 64",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Legal Looting [yellowmix]",
+   "name": "Legal Looting [yellowmix]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/PM Sequence",
+   "name": "PM Sequence",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Pad Arpeggio",
+   "name": "Pad Arpeggio",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Rect In Peace",
+   "name": "Rect In Peace",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Rhythmic Sequence 01",
+   "name": "Rhythmic Sequence 01",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Chiptune/Shortchip",
+   "name": "Shortchip",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Chiptune"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Alone in the Subway",
+   "name": "Alone in the Subway",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Circus Horror Show",
+   "name": "Circus Horror Show",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Creep ATMO [psylion]",
+   "name": "Creep ATMO [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Dark-Psy FX [psylion]",
+   "name": "Dark-Psy FX [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Fresh Breeze",
+   "name": "Fresh Breeze",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/High Tea [4T]",
+   "name": "High Tea [4T]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Lead Sinematic",
+   "name": "Lead Sinematic",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/MAD PAD 3",
+   "name": "MAD PAD 3",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Prophet",
+   "name": "Prophet",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/S&H harsh ",
+   "name": "S&H harsh ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Swell Bits",
+   "name": "Swell Bits",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Synth Unleash [RM]",
+   "name": "Synth Unleash [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/The Sound of Agony [psylion]",
+   "name": "The Sound of Agony [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drones/Timmy got some meth [psylion]",
+   "name": "Timmy got some meth [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drones"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Clap [RS]",
+   "name": "Clap [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Claps [Photonic]",
+   "name": "Claps [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Crash-1 [Photonic]",
+   "name": "Crash-1 [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Drum Machine",
+   "name": "Drum Machine",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Flange Hat",
+   "name": "Flange Hat",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Hi-Hat 8th Seq [RS]",
+   "name": "Hi-Hat 8th Seq [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Hi-Hat [RS]",
+   "name": "Hi-Hat [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/HiHat-closed [Photonic]",
+   "name": "HiHat-closed [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Kick 1 XY [RS]",
+   "name": "Kick 1 XY [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Kick tekmid",
+   "name": "Kick tekmid",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Kick-1 [Photonic]",
+   "name": "Kick-1 [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Marching [Photonic]",
+   "name": "Marching [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Shaker [Photonic]",
+   "name": "Shaker [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Shakers [RS]",
+   "name": "Shakers [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Simple Hat [Projektor]",
+   "name": "Simple Hat [Projektor]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Snappy Snare [Projektor]",
+   "name": "Snappy Snare [Projektor]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/SnarNoize",
+   "name": "SnarNoize",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Snare 1 [RS]",
+   "name": "Snare 1 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Snare-1 [Photonic]",
+   "name": "Snare-1 [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Snare-2 [Photonic]",
+   "name": "Snare-2 [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Taiko-Drums [Photonic]",
+   "name": "Taiko-Drums [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Toms 1 [RS]",
+   "name": "Toms 1 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Toms 2 [RS]",
+   "name": "Toms 2 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/Toms-1 [Photonic]",
+   "name": "Toms-1 [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/War-Drum [Photonic]",
+   "name": "War-Drum [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Drums/kick 909",
+   "name": "kick 909",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Drums"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Accordion",
+   "name": "Accordion",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Brass Pad",
+   "name": "Brass Pad",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Celeste",
+   "name": "Celeste",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Chello (MW,AT) [Photonic]",
+   "name": "Chello (MW,AT) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Chinese Steel [4T-RS]",
+   "name": "Chinese Steel [4T-RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/DistGuit (MW,AT) [Photonic]",
+   "name": "DistGuit (MW,AT) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/DoubleBass(MW) [Photonic]",
+   "name": "DoubleBass(MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/FM Steel Drum [RS]",
+   "name": "FM Steel Drum [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Flute (MW,AT) [Photonic]",
+   "name": "Flute (MW,AT) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Jazzguitar (MW) [Photonic]",
+   "name": "Jazzguitar (MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/MusicBox [Photonic]",
+   "name": "MusicBox [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/OB Brass",
+   "name": "OB Brass",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Sitar Echo",
+   "name": "Sitar Echo",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Steel Drums",
+   "name": "Steel Drums",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Steeldrum [Photonic]",
+   "name": "Steeldrum [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Instruments/Tuba",
+   "name": "Tuba",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Instruments"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/E-Piano (MW) [Photonic]",
+   "name": "E-Piano (MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Electric Piano [tx]",
+   "name": "Electric Piano [tx]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/FM Piano",
+   "name": "FM Piano",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/FX Piano",
+   "name": "FX Piano",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Funky-D6 [Photonic]",
+   "name": "Funky-D6 [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Funky-D6",
+   "name": "Funky-D6",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Mellow Keys [tx]",
+   "name": "Mellow Keys [tx]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Metallic Keys [XR]",
+   "name": "Metallic Keys [XR]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/PhasClavi (AT) [Photonic]",
+   "name": "PhasClavi (AT) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Phuzz Piano",
+   "name": "Phuzz Piano",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Pianet",
+   "name": "Pianet",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Piano Ballad 3",
+   "name": "Piano Ballad 3",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Piano [Photonic]",
+   "name": "Piano [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/SynKeys 2 [RS]",
+   "name": "SynKeys 2 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/SynKeys 3XY [RS]",
+   "name": "SynKeys 3XY [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Synth Piano",
+   "name": "Synth Piano",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Keys/Toy Piano",
+   "name": "Toy Piano",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Keys"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Cuaroth [yellowmix]",
+   "name": "Cuaroth [yellowmix]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Drawing Lead",
+   "name": "Drawing Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/EDM Synth Projektor",
+   "name": "EDM Synth Projektor",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Filter LFO Lead",
+   "name": "Filter LFO Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Glide Comb Lead",
+   "name": "Glide Comb Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Karplus Lead",
+   "name": "Karplus Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Lead Glide",
+   "name": "Lead Glide",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Lead Rusty",
+   "name": "Lead Rusty",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Lead Sine",
+   "name": "Lead Sine",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Lead Square A",
+   "name": "Lead Square A",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Lead Squarepusher",
+   "name": "Lead Squarepusher",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/LeadPuls (AT,MW) [Photonic]",
+   "name": "LeadPuls (AT,MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Meeting Of Three",
+   "name": "Meeting Of Three",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Pad cheapo",
+   "name": "Pad cheapo",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Random Voices",
+   "name": "Random Voices",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Reverse Lead",
+   "name": "Reverse Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Rnd Delay Lead",
+   "name": "Rnd Delay Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Synth Brass",
+   "name": "Synth Brass",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Unison Glide Lead",
+   "name": "Unison Glide Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Leads/Vibrato Lead",
+   "name": "Vibrato Lead",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Leads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/666-001-Organ",
+   "name": "666-001-Organ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Church Organ",
+   "name": "Church Organ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Glass Organ",
+   "name": "Glass Organ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Organ 0001",
+   "name": "Organ 0001",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Organ Tremolo",
+   "name": "Organ Tremolo",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Pad Pleasure",
+   "name": "Pad Pleasure",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Phazzy Organ",
+   "name": "Phazzy Organ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Pipe Dreams [yellowmix]",
+   "name": "Pipe Dreams [yellowmix]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Sparkle Organ",
+   "name": "Sparkle Organ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Organ/Suitcase n Amp [yellowmix]",
+   "name": "Suitcase n Amp [yellowmix]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Organ"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Boards 2",
+   "name": "Boards 2",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Burble Pad",
+   "name": "Burble Pad",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Choir Aahs 1 [RS]",
+   "name": "Choir Aahs 1 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Choir Aahs 2 [RS]",
+   "name": "Choir Aahs 2 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Choir Yeah [RS]",
+   "name": "Choir Yeah [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Choir [Photonic]",
+   "name": "Choir [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Clouded [RM]",
+   "name": "Clouded [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Darken Nature [RM]",
+   "name": "Darken Nature [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Drifter",
+   "name": "Drifter",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/FM Sphere [RS]",
+   "name": "FM Sphere [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Female aah mellow",
+   "name": "Female aah mellow",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Female aah",
+   "name": "Female aah",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Haunt [RM]",
+   "name": "Haunt [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Moonshade",
+   "name": "Moonshade",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/PAD Open",
+   "name": "PAD Open",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Portapotty",
+   "name": "Portapotty",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Strings (MW,AT) [Photonic]",
+   "name": "Strings (MW,AT) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Strings short (MW) [Photonic]",
+   "name": "Strings short (MW) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Sweeper 3",
+   "name": "Sweeper 3",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Synae XY [RS]",
+   "name": "Synae XY [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Synth Ballad",
+   "name": "Synth Ballad",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Synth Strings",
+   "name": "Synth Strings",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Synth Strings2",
+   "name": "Synth Strings2",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Synthwave Pad",
+   "name": "Synthwave Pad",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/VangBrass (MW,AT) [Photonic]",
+   "name": "VangBrass (MW,AT) [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Voices",
+   "name": "Voices",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/Warm-Pad [Photonic]",
+   "name": "Warm-Pad [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/forever young",
+   "name": "forever young",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Pads/sounds like a melody",
+   "name": "sounds like a melody",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Pads"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Alien Arp",
+   "name": "Alien Arp",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Cheering Minions",
+   "name": "Cheering Minions",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Doctor Acid",
+   "name": "Doctor Acid",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Drippin Droplets",
+   "name": "Drippin Droplets",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Drone S&H",
+   "name": "Drone S&H",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Dropper [RS]",
+   "name": "Dropper [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/FM-XY Fun [RS]",
+   "name": "FM-XY Fun [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/FX Jump [RM]",
+   "name": "FX Jump [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/FX Pitch Down [RM]",
+   "name": "FX Pitch Down [RM]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/FX Reso Warble",
+   "name": "FX Reso Warble",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Flange Fun [psylion]",
+   "name": "Flange Fun [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Formant Squelch",
+   "name": "Formant Squelch",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/German Glitches",
+   "name": "German Glitches",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/PSY Noise Squelch ",
+   "name": "PSY Noise Squelch ",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Pipe FX",
+   "name": "Pipe FX",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Plastic Riser 1 [RS]",
+   "name": "Plastic Riser 1 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Plastic Riser 2 [RS]",
+   "name": "Plastic Riser 2 [RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/S&H noise",
+   "name": "S&H noise",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Something Awakens",
+   "name": "Something Awakens",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Space Shuttle [psylion]",
+   "name": "Space Shuttle [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/SFX/Voices in my head [psylion]",
+   "name": "Voices in my head [psylion]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "SFX"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Chinese Ow [4T-RS]",
+   "name": "Chinese Ow [4T-RS]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Chord Pluck Projektor",
+   "name": "Chord Pluck Projektor",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Deep Triads (velo)",
+   "name": "Deep Triads (velo)",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Dub Synth",
+   "name": "Dub Synth",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Gurgles dirty",
+   "name": "Gurgles dirty",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Gurgles",
+   "name": "Gurgles",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/House Stab",
+   "name": "House Stab",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/JMJ-Sync [Photonic]",
+   "name": "JMJ-Sync [Photonic]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/LFO Keys",
+   "name": "LFO Keys",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Lead 17",
+   "name": "Lead 17",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Lead Hit 1",
+   "name": "Lead Hit 1",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Lead phazz",
+   "name": "Lead phazz",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Metallic (vel)",
+   "name": "Metallic (vel)",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Pad House",
+   "name": "Pad House",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Pluck",
+   "name": "Pluck",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Plucker 3",
+   "name": "Plucker 3",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  },
+  {
+   "id": "factory/Stabs/Saw Pluck [Projektor]",
+   "name": "Saw Pluck [Projektor]",
+   "origin": "factory",
+   "available": true,
+   "categories": [
+    [
+     "Stabs"
+    ]
+   ],
+   "rights": {
+    "level": "free"
+   }
+  }
+ ],
+ "collections": [
+  {
+   "id": "category/Arps & Sequences",
+   "name": "Arps & Sequences",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Arps & Sequences/Arp Charger [RM]",
+    "factory/Arps & Sequences/Arp Chopper [RM]",
+    "factory/Arps & Sequences/Bass Arp 1 [RS]",
+    "factory/Arps & Sequences/Bassline",
+    "factory/Arps & Sequences/Cinedrive (MW) [Photonic]",
+    "factory/Arps & Sequences/Critical [tx]",
+    "factory/Arps & Sequences/Darkness [psylion]",
+    "factory/Arps & Sequences/Doctor Karlsson",
+    "factory/Arps & Sequences/Dreamy ARP [psylion]",
+    "factory/Arps & Sequences/Forgive me GOD",
+    "factory/Arps & Sequences/Funk Acid 2 [psylion]",
+    "factory/Arps & Sequences/Funk Acid [psylion]",
+    "factory/Arps & Sequences/Funny 2",
+    "factory/Arps & Sequences/Glass Morph ARP [RS]",
+    "factory/Arps & Sequences/Harpstrum Down [RS]",
+    "factory/Arps & Sequences/Harpstrum Up [RS]",
+    "factory/Arps & Sequences/I was born in 90s [psylion]",
+    "factory/Arps & Sequences/Midi Rain",
+    "factory/Arps & Sequences/Minor Song",
+    "factory/Arps & Sequences/Modular Mess 2",
+    "factory/Arps & Sequences/Omani Desert 1 [psylion]",
+    "factory/Arps & Sequences/Omani Desert 2 [psylion]",
+    "factory/Arps & Sequences/RandArpChords (MW) [Photonic]",
+    "factory/Arps & Sequences/Self Phasing Arp",
+    "factory/Arps & Sequences/Sharp Lead",
+    "factory/Arps & Sequences/Sound of Paradise [psylion]",
+    "factory/Arps & Sequences/The Arp 2.0 [XR]"
+   ]
+  },
+  {
+   "id": "category/Atmospheres",
+   "name": "Atmospheres",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Atmospheres/Alien Atmo [tx]",
+    "factory/Atmospheres/Alien Chaos [psylion]",
+    "factory/Atmospheres/Alien Chaos2 [psylion]",
+    "factory/Atmospheres/Analog Particles [XR]",
+    "factory/Atmospheres/Antarctica [RS]",
+    "factory/Atmospheres/Atmo-Chaos [Photonic]",
+    "factory/Atmospheres/Blinking Pad [Photonic]",
+    "factory/Atmospheres/Digital Motion [XR]",
+    "factory/Atmospheres/Dreams of Utopia [psylion]",
+    "factory/Atmospheres/Eerie Pad",
+    "factory/Atmospheres/Expressive Atmosphere [XR]",
+    "factory/Atmospheres/Floating Dreams [XR]",
+    "factory/Atmospheres/Frosty Atmo [tx]",
+    "factory/Atmospheres/Galata Dream",
+    "factory/Atmospheres/Messy Seq X-Y",
+    "factory/Atmospheres/Orbitalesque Stabs [4T]",
+    "factory/Atmospheres/Pacific Nights",
+    "factory/Atmospheres/Pulsator",
+    "factory/Atmospheres/Sound of Paradise2 [psylion]",
+    "factory/Atmospheres/Sunrise",
+    "factory/Atmospheres/Vector Soundtrack [XR]",
+    "factory/Atmospheres/Violet",
+    "factory/Atmospheres/Voyage 1a X-Y",
+    "factory/Atmospheres/Zambezi River [psylion]"
+   ]
+  },
+  {
+   "id": "category/Bass",
+   "name": "Bass",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Bass/Analog Bass [tx]",
+    "factory/Bass/BS Decay Bass MW",
+    "factory/Bass/BS PWM Bass XY",
+    "factory/Bass/Bass Crusher [RM]",
+    "factory/Bass/Bass Low [RM]",
+    "factory/Bass/Bass Seq 2 [RS]",
+    "factory/Bass/Bass Simple PM [RS]",
+    "factory/Bass/Bass Wobble [4T]",
+    "factory/Bass/Bass X-Y Mod [RS]",
+    "factory/Bass/Boards Bass",
+    "factory/Bass/DeepBass [Photonic]",
+    "factory/Bass/Growly FM Bass [XR]",
+    "factory/Bass/PM Bass [XR]",
+    "factory/Bass/Rhythm Bass",
+    "factory/Bass/Sausage Bassener"
+   ]
+  },
+  {
+   "id": "category/Chimes",
+   "name": "Chimes",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Chimes/Arp-Bells [Photonic]",
+    "factory/Chimes/Cheese Pad",
+    "factory/Chimes/Chimes [Photonic]",
+    "factory/Chimes/Ethereal Bells",
+    "factory/Chimes/FM Church Bells [RS]",
+    "factory/Chimes/Glass Harp A slow",
+    "factory/Chimes/Glass Morph XY [RS]",
+    "factory/Chimes/New Age Lead",
+    "factory/Chimes/PRC GlassHit",
+    "factory/Chimes/Pad Sine",
+    "factory/Chimes/Synth Glass ",
+    "factory/Chimes/Synth Glassybell",
+    "factory/Chimes/Vibraphone"
+   ]
+  },
+  {
+   "id": "category/Chiptune",
+   "name": "Chiptune",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Chiptune/Bagpipe Tune",
+    "factory/Chiptune/Chippy",
+    "factory/Chiptune/ChippyDelayed",
+    "factory/Chiptune/Chiptune Chords [Projektor]",
+    "factory/Chiptune/Lead 64",
+    "factory/Chiptune/Legal Looting [yellowmix]",
+    "factory/Chiptune/PM Sequence",
+    "factory/Chiptune/Pad Arpeggio",
+    "factory/Chiptune/Rect In Peace",
+    "factory/Chiptune/Rhythmic Sequence 01",
+    "factory/Chiptune/Shortchip"
+   ]
+  },
+  {
+   "id": "category/Drones",
+   "name": "Drones",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Drones/Alone in the Subway",
+    "factory/Drones/Circus Horror Show",
+    "factory/Drones/Creep ATMO [psylion]",
+    "factory/Drones/Dark-Psy FX [psylion]",
+    "factory/Drones/Fresh Breeze",
+    "factory/Drones/High Tea [4T]",
+    "factory/Drones/Lead Sinematic",
+    "factory/Drones/MAD PAD 3",
+    "factory/Drones/Prophet",
+    "factory/Drones/S&H harsh ",
+    "factory/Drones/Swell Bits",
+    "factory/Drones/Synth Unleash [RM]",
+    "factory/Drones/The Sound of Agony [psylion]",
+    "factory/Drones/Timmy got some meth [psylion]"
+   ]
+  },
+  {
+   "id": "category/Drums",
+   "name": "Drums",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Drums/Clap [RS]",
+    "factory/Drums/Claps [Photonic]",
+    "factory/Drums/Crash-1 [Photonic]",
+    "factory/Drums/Drum Machine",
+    "factory/Drums/Flange Hat",
+    "factory/Drums/Hi-Hat 8th Seq [RS]",
+    "factory/Drums/Hi-Hat [RS]",
+    "factory/Drums/HiHat-closed [Photonic]",
+    "factory/Drums/Kick 1 XY [RS]",
+    "factory/Drums/Kick tekmid",
+    "factory/Drums/Kick-1 [Photonic]",
+    "factory/Drums/Marching [Photonic]",
+    "factory/Drums/Shaker [Photonic]",
+    "factory/Drums/Shakers [RS]",
+    "factory/Drums/Simple Hat [Projektor]",
+    "factory/Drums/Snappy Snare [Projektor]",
+    "factory/Drums/SnarNoize",
+    "factory/Drums/Snare 1 [RS]",
+    "factory/Drums/Snare-1 [Photonic]",
+    "factory/Drums/Snare-2 [Photonic]",
+    "factory/Drums/Taiko-Drums [Photonic]",
+    "factory/Drums/Toms 1 [RS]",
+    "factory/Drums/Toms 2 [RS]",
+    "factory/Drums/Toms-1 [Photonic]",
+    "factory/Drums/War-Drum [Photonic]",
+    "factory/Drums/kick 909"
+   ]
+  },
+  {
+   "id": "category/Instruments",
+   "name": "Instruments",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Instruments/Accordion",
+    "factory/Instruments/Brass Pad",
+    "factory/Instruments/Celeste",
+    "factory/Instruments/Chello (MW,AT) [Photonic]",
+    "factory/Instruments/Chinese Steel [4T-RS]",
+    "factory/Instruments/DistGuit (MW,AT) [Photonic]",
+    "factory/Instruments/DoubleBass(MW) [Photonic]",
+    "factory/Instruments/FM Steel Drum [RS]",
+    "factory/Instruments/Flute (MW,AT) [Photonic]",
+    "factory/Instruments/Jazzguitar (MW) [Photonic]",
+    "factory/Instruments/MusicBox [Photonic]",
+    "factory/Instruments/OB Brass",
+    "factory/Instruments/Sitar Echo",
+    "factory/Instruments/Steel Drums",
+    "factory/Instruments/Steeldrum [Photonic]",
+    "factory/Instruments/Tuba"
+   ]
+  },
+  {
+   "id": "category/Keys",
+   "name": "Keys",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Keys/E-Piano (MW) [Photonic]",
+    "factory/Keys/Electric Piano [tx]",
+    "factory/Keys/FM Piano",
+    "factory/Keys/FX Piano",
+    "factory/Keys/Funky-D6 [Photonic]",
+    "factory/Keys/Funky-D6",
+    "factory/Keys/Mellow Keys [tx]",
+    "factory/Keys/Metallic Keys [XR]",
+    "factory/Keys/PhasClavi (AT) [Photonic]",
+    "factory/Keys/Phuzz Piano",
+    "factory/Keys/Pianet",
+    "factory/Keys/Piano Ballad 3",
+    "factory/Keys/Piano [Photonic]",
+    "factory/Keys/SynKeys 2 [RS]",
+    "factory/Keys/SynKeys 3XY [RS]",
+    "factory/Keys/Synth Piano",
+    "factory/Keys/Toy Piano"
+   ]
+  },
+  {
+   "id": "category/Leads",
+   "name": "Leads",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Leads/Cuaroth [yellowmix]",
+    "factory/Leads/Drawing Lead",
+    "factory/Leads/EDM Synth Projektor",
+    "factory/Leads/Filter LFO Lead",
+    "factory/Leads/Glide Comb Lead",
+    "factory/Leads/Karplus Lead",
+    "factory/Leads/Lead Glide",
+    "factory/Leads/Lead Rusty",
+    "factory/Leads/Lead Sine",
+    "factory/Leads/Lead Square A",
+    "factory/Leads/Lead Squarepusher",
+    "factory/Leads/LeadPuls (AT,MW) [Photonic]",
+    "factory/Leads/Meeting Of Three",
+    "factory/Leads/Pad cheapo",
+    "factory/Leads/Random Voices",
+    "factory/Leads/Reverse Lead",
+    "factory/Leads/Rnd Delay Lead",
+    "factory/Leads/Synth Brass",
+    "factory/Leads/Unison Glide Lead",
+    "factory/Leads/Vibrato Lead"
+   ]
+  },
+  {
+   "id": "category/Organ",
+   "name": "Organ",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Organ/666-001-Organ",
+    "factory/Organ/Church Organ",
+    "factory/Organ/Glass Organ",
+    "factory/Organ/Organ 0001",
+    "factory/Organ/Organ Tremolo",
+    "factory/Organ/Pad Pleasure",
+    "factory/Organ/Phazzy Organ",
+    "factory/Organ/Pipe Dreams [yellowmix]",
+    "factory/Organ/Sparkle Organ",
+    "factory/Organ/Suitcase n Amp [yellowmix]"
+   ]
+  },
+  {
+   "id": "category/Pads",
+   "name": "Pads",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Pads/Boards 2",
+    "factory/Pads/Burble Pad",
+    "factory/Pads/Choir Aahs 1 [RS]",
+    "factory/Pads/Choir Aahs 2 [RS]",
+    "factory/Pads/Choir Yeah [RS]",
+    "factory/Pads/Choir [Photonic]",
+    "factory/Pads/Clouded [RM]",
+    "factory/Pads/Darken Nature [RM]",
+    "factory/Pads/Drifter",
+    "factory/Pads/FM Sphere [RS]",
+    "factory/Pads/Female aah mellow",
+    "factory/Pads/Female aah",
+    "factory/Pads/Haunt [RM]",
+    "factory/Pads/Moonshade",
+    "factory/Pads/PAD Open",
+    "factory/Pads/Portapotty",
+    "factory/Pads/Strings (MW,AT) [Photonic]",
+    "factory/Pads/Strings short (MW) [Photonic]",
+    "factory/Pads/Sweeper 3",
+    "factory/Pads/Synae XY [RS]",
+    "factory/Pads/Synth Ballad",
+    "factory/Pads/Synth Strings",
+    "factory/Pads/Synth Strings2",
+    "factory/Pads/Synthwave Pad",
+    "factory/Pads/VangBrass (MW,AT) [Photonic]",
+    "factory/Pads/Voices",
+    "factory/Pads/Warm-Pad [Photonic]",
+    "factory/Pads/forever young",
+    "factory/Pads/sounds like a melody"
+   ]
+  },
+  {
+   "id": "category/SFX",
+   "name": "SFX",
+   "kind": "factory",
+   "presetIds": [
+    "factory/SFX/Alien Arp",
+    "factory/SFX/Cheering Minions",
+    "factory/SFX/Doctor Acid",
+    "factory/SFX/Drippin Droplets",
+    "factory/SFX/Drone S&H",
+    "factory/SFX/Dropper [RS]",
+    "factory/SFX/FM-XY Fun [RS]",
+    "factory/SFX/FX Jump [RM]",
+    "factory/SFX/FX Pitch Down [RM]",
+    "factory/SFX/FX Reso Warble",
+    "factory/SFX/Flange Fun [psylion]",
+    "factory/SFX/Formant Squelch",
+    "factory/SFX/German Glitches",
+    "factory/SFX/PSY Noise Squelch ",
+    "factory/SFX/Pipe FX",
+    "factory/SFX/Plastic Riser 1 [RS]",
+    "factory/SFX/Plastic Riser 2 [RS]",
+    "factory/SFX/S&H noise",
+    "factory/SFX/Something Awakens",
+    "factory/SFX/Space Shuttle [psylion]",
+    "factory/SFX/Voices in my head [psylion]"
+   ]
+  },
+  {
+   "id": "category/Stabs",
+   "name": "Stabs",
+   "kind": "factory",
+   "presetIds": [
+    "factory/Stabs/Chinese Ow [4T-RS]",
+    "factory/Stabs/Chord Pluck Projektor",
+    "factory/Stabs/Deep Triads (velo)",
+    "factory/Stabs/Dub Synth",
+    "factory/Stabs/Gurgles dirty",
+    "factory/Stabs/Gurgles",
+    "factory/Stabs/House Stab",
+    "factory/Stabs/JMJ-Sync [Photonic]",
+    "factory/Stabs/LFO Keys",
+    "factory/Stabs/Lead 17",
+    "factory/Stabs/Lead Hit 1",
+    "factory/Stabs/Lead phazz",
+    "factory/Stabs/Metallic (vel)",
+    "factory/Stabs/Pad House",
+    "factory/Stabs/Pluck",
+    "factory/Stabs/Plucker 3",
+    "factory/Stabs/Saw Pluck [Projektor]"
+   ]
+  }
+ ]
+}

@@ -12,6 +12,15 @@ using juce::StringArray;
 using juce::var;
 
 const char *kRevision = "odin2-2.4.1-factory";
+const char *kDemoPack = "odin-demo-organ";
+
+bool isDemoRestricted(const char *category) { return juce::String(category) == "Organ"; }
+
+// DEMO entitlement: "owned" if this marker file exists. A real plugin would check its own license/activation data.
+bool demoPackOwned() {
+	return juce::File::getSpecialLocation(juce::File::userApplicationDataDirectory)
+	    .getChildFile("Application Support/Odin2/entitlements").getChildFile(kDemoPack).existsAsFile();
+}
 
 var errorResponse(const char *code, const juce::String &message) {
 	auto *err = new DynamicObject();
@@ -36,8 +45,27 @@ var presetRecord(int index) {
 	cats.add(var(path));
 	r->setProperty("categories", var(cats));
 	auto *rights = new DynamicObject();
-	rights->setProperty("level", "free");  // GPLv3 plugin, factory patches ship with the source
+	if (isDemoRestricted(e.category)) {
+		// DEMO ONLY: pretends the Organ category is a paid pack, to exercise rights + entitlement.
+		rights->setProperty("level", "restricted");
+		rights->setProperty("pack", kDemoPack);
+		rights->setProperty("terms", "https://example.com/odin-demo-pack");
+		auto *pack = new DynamicObject();
+		pack->setProperty("id", kDemoPack);
+		pack->setProperty("name", "Demo Organ Pack (fake)");
+		r->setProperty("pack", var(pack));
+	} else {
+		rights->setProperty("level", "free");  // GPLv3 plugin, factory patches ship with the source
+	}
 	r->setProperty("rights", var(rights));
+	const juce::String cat(e.category);
+	if (cat == "Arps & Sequences" || cat == "Atmospheres") {
+		auto *aud = new DynamicObject();
+		aud->setProperty("kind", cat == "Atmospheres" ? "pad" : "sequence");
+		aud->setProperty("tempoSync", cat != "Atmospheres");
+		aud->setProperty("tailSeconds", cat == "Atmospheres" ? 8 : 2);
+		r->setProperty("audition", var(aud));
+	}
 	return var(r);
 }
 
@@ -91,7 +119,7 @@ std::string OdinAudioProcessor::handleRequest(const std::string &requestJson) {
 		plugin->setProperty("version", "2.4.1");
 		res->setProperty("plugin", var(plugin));
 		juce::Array<var> ops;
-		for (auto *o : {"hello", "list", "get", "load", "exportState", "current"})
+		for (auto *o : {"hello", "list", "get", "load", "exportState", "current", "collections", "collection", "entitled"})
 			ops.add(juce::String(o));
 		res->setProperty("ops", var(ops));
 		res->setProperty("revision", kRevision);
@@ -145,6 +173,49 @@ std::string OdinAudioProcessor::handleRequest(const std::string &requestJson) {
 			res->setProperty("stateKind", "au.fullState/juce-getStateInformation");
 			res->setProperty("state", juce::Base64::toBase64(exported.getData(), exported.getSize()));
 		}
+	} else if (op == "collections" || op == "collection") {
+		// Factory categories double as collections.
+		juce::StringArray cats;
+		for (int i = 0; i < kConnectorCatalogSize; ++i)
+			cats.addIfNotAlreadyThere(juce::String(kConnectorCatalog[i].category));
+		if (op == "collections") {
+			juce::Array<var> list;
+			for (auto &c : cats) {
+				auto *o = new DynamicObject();
+				o->setProperty("id", "category/" + c);
+				o->setProperty("name", c);
+				o->setProperty("kind", "factory");
+				list.add(var(o));
+			}
+			res->setProperty("collections", var(list));
+		} else {
+			const auto id = req["id"].toString();
+			if (!id.startsWith("category/") || !cats.contains(id.fromFirstOccurrenceOf("category/", false, false)))
+				return juce::JSON::toString(errorResponse("not_found", "no such collection"), true).toStdString();
+			const auto name = id.fromFirstOccurrenceOf("category/", false, false);
+			juce::Array<var> ids;
+			for (int i = 0; i < kConnectorCatalogSize; ++i)
+				if (juce::String(kConnectorCatalog[i].category) == name)
+					ids.add(presetRecord(i)["id"]);
+			auto *o = new DynamicObject();
+			o->setProperty("id", id);
+			o->setProperty("name", name);
+			o->setProperty("kind", "factory");
+			o->setProperty("presetIds", var(ids));
+			res->setProperty("collection", var(o));
+		}
+	} else if (op == "entitled") {
+		// Accepts "packs":[...] or "ids":[...]; answers per item. Local answer only, never sent anywhere.
+		auto *answers = new DynamicObject();
+		auto answerFor = [&](const juce::String &pack) { return juce::String(pack == kDemoPack ? (demoPackOwned() ? "owned" : "not_owned") : "unknown"); };
+		if (auto *packs = req["packs"].getArray())
+			for (auto &p : *packs) answers->setProperty(p.toString(), answerFor(p.toString()));
+		if (auto *ids = req["ids"].getArray())
+			for (auto &id : *ids) {
+				const int i = indexForId(id.toString());
+				answers->setProperty(id.toString(), i < 0 ? juce::String("unknown") : isDemoRestricted(kConnectorCatalog[i].category) ? answerFor(kDemoPack) : juce::String("owned"));
+			}
+		res->setProperty("entitled", var(answers));
 	} else if (op == "current") {
 		if (!m_connector_current_id.empty())
 			res->setProperty("id", juce::String(m_connector_current_id));
