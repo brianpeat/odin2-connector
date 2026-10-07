@@ -1,7 +1,7 @@
-// Odin 2: Preset Connector handler (spec v0.1 draft). Serves the 260 factory presets that are baked into the binary.
+// Odin 2: Preset Bridge handler (spec v0.1 draft). Serves the 260 factory presets that are baked into the binary.
 #include "PluginProcessor.h"
-#include "PresetConnectorCatalog.h"
-#include <PresetConnector.h>
+#include "PresetBridgeCatalog.h"
+#include <PresetBridge.h>
 
 // Defined (non-inline) in gui/FactoryPresetBinaryMapping.h, which is only included by PatchBrowser.cpp.
 std::pair<const char *, int> getFactoryPresetBinaryData(const std::string &p_preset);
