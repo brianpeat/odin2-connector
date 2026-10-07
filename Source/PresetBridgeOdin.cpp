@@ -1,7 +1,8 @@
-// Odin 2: Preset Bridge handler (spec v0.1 draft). Serves the 260 factory presets that are baked into the binary.
+// Odin 2: Preset Bridge handler (spec v0.2 draft). Serves the 260 factory presets that are baked into the binary.
 #include "PluginProcessor.h"
 #include "PresetBridgeCatalog.h"
 #include <PresetBridge.h>
+#include <cstdlib>
 
 // Defined (non-inline) in gui/FactoryPresetBinaryMapping.h, which is only included by PatchBrowser.cpp.
 std::pair<const char *, int> getFactoryPresetBinaryData(const std::string &p_preset);
@@ -14,6 +15,41 @@ using juce::var;
 const char *kRevision = "odin2-2.4.1-factory";
 const char *kDemoPack = "odin-demo-organ";
 
+// ---- Access level and throttling (spec 3.1 and 3.2) --------------------------------------------------------------------
+// Odin 2 is open source, so by default it shares everything ("open", no throttle). To try the lower levels, set
+// PRESETBRIDGE_ACCESS=catalog|audition|insight|open (and optionally PRESETBRIDGE_LOADS_PER_MINUTE=N) before the plugin loads.
+struct BridgeConfig {
+	presetbridge::Access access = presetbridge::Access::open;
+	int loadsPerMinute = 0;
+	BridgeConfig() {
+		if (const char *a = std::getenv("PRESETBRIDGE_ACCESS"))
+			access = presetbridge::accessFromName(a, presetbridge::Access::open);
+		loadsPerMinute = (access == presetbridge::Access::audition || access == presetbridge::Access::insight) ? 10 : 0;
+		if (const char *n = std::getenv("PRESETBRIDGE_LOADS_PER_MINUTE"))
+			loadsPerMinute = std::atoi(n);
+	}
+};
+BridgeConfig &bridgeConfig() {
+	static BridgeConfig c;
+	return c;
+}
+presetbridge::Throttle &loadThrottle() {
+	static presetbridge::Throttle t(bridgeConfig().loadsPerMinute);
+	return t;
+}
+bool opAllowed(const juce::String &op) {
+	using presetbridge::Access;
+	using presetbridge::atLeast;
+	const Access a = bridgeConfig().access;
+	if (op == "hello" || op == "list" || op == "get" || op == "collections" || op == "collection")
+		return true;
+	if (op == "load" || op == "current" || op == "entitled")
+		return atLeast(a, Access::audition);
+	if (op == "exportState")
+		return atLeast(a, Access::open);
+	return false;
+}
+
 bool isDemoRestricted(const char *category) { return juce::String(category) == "Organ"; }
 
 // DEMO entitlement: "owned" if this marker file exists. A real plugin would check its own license/activation data.
@@ -22,10 +58,12 @@ bool demoPackOwned() {
 	    .getChildFile("Application Support/Odin2/entitlements").getChildFile(kDemoPack).existsAsFile();
 }
 
-var errorResponse(const char *code, const juce::String &message) {
+var errorResponse(const char *code, const juce::String &message, int retryAfterMs = 0) {
 	auto *err = new DynamicObject();
 	err->setProperty("code", code);
 	err->setProperty("message", message);
+	if (retryAfterMs > 0)
+		err->setProperty("retryAfterMs", retryAfterMs);
 	auto *r = new DynamicObject();
 	r->setProperty("ok", false);
 	r->setProperty("error", var(err));
@@ -54,6 +92,11 @@ var presetRecord(int index) {
 		pack->setProperty("id", kDemoPack);
 		pack->setProperty("name", "Demo Organ Pack (fake)");
 		r->setProperty("pack", var(pack));
+		// DEMO ONLY: a per-preset policy (spec 3.4): this pack may not be captured out of the plugin or shared.
+		auto *policy = new DynamicObject();
+		policy->setProperty("capture", "deny");
+		policy->setProperty("share", "deny");
+		r->setProperty("policy", var(policy));
 	} else {
 		rights->setProperty("level", "free");  // GPLv3 plugin, factory patches ship with the source
 	}
@@ -111,16 +154,29 @@ std::string OdinAudioProcessor::handleRequest(const std::string &requestJson) {
 	var out(res);
 	res->setProperty("ok", true);
 
+	if (!opAllowed(op))
+		return juce::JSON::toString(errorResponse("unsupported", "not offered at access level " + juce::String(presetbridge::accessName(bridgeConfig().access)) + ": " + op), true).toStdString();
+
 	if (op == "hello") {
 		res->setProperty("connector", 1);
 		auto *plugin = new DynamicObject();
 		plugin->setProperty("name", "Odin 2");
 		plugin->setProperty("id", "com.TheWaveWarden.Odin2");
 		plugin->setProperty("version", "2.4.1");
+		plugin->setProperty("kind", "instrument");
+		auto *au = new DynamicObject();
+		au->setProperty("type", "aumu");
+		au->setProperty("subtype", "ODIN");
+		au->setProperty("manufacturer", "WAWA");
+		auto *identity = new DynamicObject();
+		identity->setProperty("au", var(au));
+		plugin->setProperty("identity", var(identity));
 		res->setProperty("plugin", var(plugin));
+		res->setProperty("access", presetbridge::accessName(bridgeConfig().access));
 		juce::Array<var> ops;
 		for (auto *o : {"hello", "list", "get", "load", "exportState", "current", "collections", "collection", "entitled"})
-			ops.add(juce::String(o));
+			if (opAllowed(o))
+				ops.add(juce::String(o));
 		res->setProperty("ops", var(ops));
 		res->setProperty("revision", kRevision);
 		auto *counts = new DynamicObject();
@@ -128,6 +184,10 @@ std::string OdinAudioProcessor::handleRequest(const std::string &requestJson) {
 		res->setProperty("counts", var(counts));
 		auto *limits = new DynamicObject();
 		limits->setProperty("pageMax", 500);
+		limits->setProperty("timeoutMs", 30000);
+		limits->setProperty("concurrent", 1);
+		if (bridgeConfig().loadsPerMinute > 0)
+			limits->setProperty("loadsPerMinute", bridgeConfig().loadsPerMinute);
 		res->setProperty("limits", var(limits));
 	} else if (op == "list") {
 		const int cursor = juce::jmax(0, (int)req["cursor"]);
@@ -149,9 +209,17 @@ std::string OdinAudioProcessor::handleRequest(const std::string &requestJson) {
 		const int i = indexForId(req["id"].toString());
 		if (i < 0)
 			return juce::JSON::toString(errorResponse("not_found", "no such preset"), true).toStdString();
+		const bool isExport = (op == "exportState");
+		if (isExport && isDemoRestricted(kConnectorCatalog[i].category))
+			return juce::JSON::toString(errorResponse("denied", "this preset's policy does not allow capture"), true).toStdString();
+		if (!isExport) {
+			// The plugin, not the host, enforces the load limit (spec 3.2).
+			const int wait = loadThrottle().tryUse();
+			if (wait > 0)
+				return juce::JSON::toString(errorResponse("rate_limited", "too many loads; slow down", wait), true).toStdString();
+		}
 		bool ok = true;
 		juce::MemoryBlock exported;
-		const bool isExport = (op == "exportState");
 		runOnMessageThread([&] {
 			if (!isExport) {
 				ok = connectorLoadFactory(i);

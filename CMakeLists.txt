@@ -73,6 +73,16 @@ target_compile_definitions(Odin2
     JUCE_DISPLAY_SPLASH_SCREEN=0
 )
 
+# ==================== Preset Bridge discovery (spec 3.3) =======================
+# Advertise the feature in the bundle so a host does not have to load the plugin to find out. The bundle is re-signed (ad hoc) after the file is added.
+if(APPLE AND TARGET Odin2_AU)
+  add_custom_command(TARGET Odin2_AU POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_BUNDLE_DIR:Odin2_AU>/Contents/Resources/PresetBridge"
+    COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_SOURCE_DIR}/presetbridge/discovery.json" "$<TARGET_BUNDLE_DIR:Odin2_AU>/Contents/Resources/PresetBridge/discovery.json"
+    COMMAND codesign --force -s - "$<TARGET_BUNDLE_DIR:Odin2_AU>"
+    VERBATIM)
+endif()
+
 # ==================== Check OS =======================
 target_include_directories(Odin2 
   PUBLIC
