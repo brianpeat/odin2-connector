@@ -255,6 +255,40 @@ static var controlsForPreset(OdinAudioProcessor &proc, int index) {
 	juce::MemoryInputStream stream(data.first, (size_t)data.second, false);
 	auto tree = juce::ValueTree::readFromStream(stream).createCopy();
 	proc.migratePatchForBridge(tree);   // older presets store some values as text; this makes them numbers, as Odin does on load
+	// Fixed routings: wired into the instrument, not in the mod matrix. Stored as plain parameters, so a preset can still set their amounts.
+	// Marked "fixed": true so a host can tell them from routings the preset author drew in the matrix.
+	auto addFixed = [&](const char *source, const juce::String &target, double amount) {
+		auto *c = new DynamicObject();
+		c->setProperty("source", juce::String(source));
+		c->setProperty("target", target);
+		c->setProperty("amount", amount);
+		c->setProperty("polarity", amount >= 0 ? "up" : "down");
+		c->setProperty("fixed", true);
+		out.add(var(c));
+	};
+	for (int i = 0; i < tree.getNumChildren(); ++i) {
+		const auto param = tree.getChild(i);
+		if (!param.hasType("PARAM")) continue;
+		const juce::String id = param["id"].toString();
+		const double v = (double)param["value"];
+		if (std::abs(v) < 0.0005) continue;
+		if (id == "amp_velocity") addFixed("velocity", "amp.level", v);
+		else if (id.length() == 8 && id.startsWith("fil") && id.endsWith("_vel")) addFixed("velocity", juce::String("filter.") + id[3] + ".cutoff", v);
+		else if (id.length() == 8 && id.startsWith("fil") && id.endsWith("_kbd")) addFixed("vendor.odin.key", juce::String("filter.") + id[3] + ".cutoff", v);
+		else if (id.length() == 8 && id.startsWith("fil") && id.endsWith("_env")) addFixed("env.filter", juce::String("filter.") + id[3] + ".cutoff", v);
+	}
+	{
+		const auto misc = tree.getChildWithName("misc");
+		const double semis = misc.isValid() ? (double)misc["pitchbend_amount"] : 0.0;
+		if (semis > 0.0) {
+			auto *c = new DynamicObject();
+			c->setProperty("source", "pitchbend");
+			c->setProperty("target", "pitch");
+			c->setProperty("fixed", true);
+			c->setProperty("vendor.odin.semitones", semis);
+			out.add(var(c));
+		}
+	}
 	const auto mod = tree.getChildWithName("mod");
 	if (!mod.isValid()) return var(out);
 	auto num = [&](const juce::String &key) { return (double)mod[key]; };
@@ -279,6 +313,19 @@ static var controlsForPreset(OdinAudioProcessor &proc, int index) {
 				c->setProperty("vendor.odin.scaleAmount", scaleAmount);
 			}
 			out.add(var(c));
+			// A source that scales another (mod wheel scaling an oscillator's modulation of the filter) is a routing of its own: without
+			// the wheel the modulation is silent. Listed as a second entry with the scaler as `source`, so "what does the wheel do?" finds it.
+			if (scale != 0 && std::abs(scaleAmount) >= 0.0005) {
+				auto *s2 = new DynamicObject();
+				s2->setProperty("source", juce::String(sourceRole(scale)));
+				s2->setProperty("target", juce::String(destRole(dest)));
+				s2->setProperty("amount", effective);
+				s2->setProperty("polarity", effective >= 0 ? "up" : "down");
+				s2->setProperty("mode", "scales");
+				s2->setProperty("scales", juce::String(sourceRole(source)));
+				s2->setProperty("vendor.odin.row", r + 1);
+				out.add(var(s2));
+			}
 		}
 	}
 	return var(out);
