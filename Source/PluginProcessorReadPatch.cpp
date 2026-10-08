@@ -21,6 +21,7 @@
 // setting them if they are available and setting to default if not
 void OdinAudioProcessor::readPatch(const ValueTree &newState) {
 	//DBG(newStateMigrated.toXmlString());
+	++m_read_patch_depth;
 
 	//create deep copy for modification
 	auto newStateMigrated = newState.createCopy();
@@ -157,6 +158,8 @@ void OdinAudioProcessor::readPatch(const ValueTree &newState) {
 	}
 
 	setMonoPolyLegato(VALUETREETOPLAYMODE((int)m_value_tree.state.getChildWithName("misc")["legato"]));
+	if (--m_read_patch_depth == 0)
+		connectorPatchLoaded(newStateMigrated);
 }
 
 bool OdinAudioProcessor::checkLoadParameter(const String &p_name) {

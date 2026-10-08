@@ -18,6 +18,8 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "GlobalIncludes.h"
 #include <PresetBridge.h>
+#include <deque>
+#include <mutex>
 #include "OdinTreeListener.h"
 #include "audio/FX/Chorus.h"
 #include "audio/FX/Delay.h"
@@ -50,7 +52,19 @@ public:
 	// Preset Bridge (see connector/ and Source/PresetBridgeOdin.cpp)
 	std::string handleRequest(const std::string &requestJson) override;
 	bool connectorLoadFactory(int index);
+	void migratePatchForBridge(ValueTree &patch) { migratePatch(patch); }   // lets the bridge read a preset the way Odin does
+	void connectorPatchLoaded(const ValueTree &patch);   // called at the end of readPatch (feeds the `events` op)
 	std::string m_connector_current_id;
+	int m_read_patch_depth = 0;         // readPatch loads the init patch first for old presets; only the outermost call is a "preset change"
+	bool m_connector_loading = false;   // true while the bridge itself is loading (so its own loads are not reported twice)
+	bool m_connector_quiet = false;     // true while the bridge borrows the engine to export a state (no events)
+	struct ConnectorEvent {
+		long long seq;
+		std::string type, id, name;
+	};
+	std::deque<ConnectorEvent> m_connector_events;
+	std::mutex m_connector_events_mutex;
+	long long m_connector_event_seq = 0;
 
 	OdinAudioProcessor();
 	~OdinAudioProcessor();
