@@ -380,6 +380,8 @@ std::string OdinAudioProcessor::handleRequest(const std::string &requestJson) {
 	const var req = juce::JSON::parse(juce::String(requestJson));
 	if (!req.isObject())
 		return juce::JSON::toString(errorResponse("bad_request", "request is not a JSON object"), true).toStdString();
+	if (!req["op"].isString() || req["op"].toString().isEmpty())
+		return juce::JSON::toString(errorResponse("bad_request", "request needs a string \"op\""), true).toStdString();
 	const juce::String op = req["op"].toString();
 	auto *res = new DynamicObject();
 	var out(res);
